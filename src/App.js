@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Portfolio from './pages/Portfolio';
 import './App.css';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" exact />
-        </Routes>
-      </Router>
-      <div className="centeredText">
-        <h1>Charles Cantin</h1>
-        <p>Photographe</p>
-      </div>
-    </>
+<>
+  <Router>
+      <Navbar />
+      <Hero />
+      <Routes>
+        <Route path="/" exact />
+        <Route path='/portfolio' element={<Portfolio />} />
+      </Routes>
+  </Router>
+</>
   );
 }
 
