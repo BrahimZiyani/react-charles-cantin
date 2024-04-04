@@ -1,0 +1,32 @@
+.slide {
+    width: 50%;
+    height: inherit;
+    padding: 15px 150px;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+}
+
+.slide img:active{
+    cursor: grabbing;
+}
+
+p{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+
+.FaArrowAltCircleLeft,
+.FaArrowAltCircleRight {
+  color: #000; 
+  font-size: 24px; 
+
+}
+
+  

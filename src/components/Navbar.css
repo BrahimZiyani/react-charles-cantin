@@ -1,10 +1,11 @@
 .navbar {
-  height: 200px;
+  height: 150px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: relative; /* Modification ici */
   top: 0;
   z-index: 999;
 }
@@ -90,7 +91,7 @@
   }
 
   .nav-menu.active {
-    padding: 1rem 0.2rem;
+    padding: 1rem 0rem;
     background: #242222;
     left: 0;
     opacity: 1;
@@ -101,6 +102,7 @@
   .nav-links {
     text-align: center;
     height: 30px;
+    padding: 0;
     width: 100%;
     display: table;
   }

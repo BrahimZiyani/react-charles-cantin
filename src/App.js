@@ -10,11 +10,11 @@ function App() {
 <>
   <Router>
       <Navbar />
-      <Hero />
       <Routes>
-        <Route path="/" exact />
-        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path="/" element={<Hero />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
+      <p className='footer'>© Charles Cantin 2024</p>
   </Router>
 </>
   );
