@@ -8,44 +8,74 @@ import { CircleArrowDown } from 'lucide-react';
 
 const SliderData = [
   {
-    image: '/pexels-aleksandar-pasaric-2411688.jpg',
+    image: '/Baby/Baby1.jpg',
     description: 'ƒ/8.0, ISO 200, 1/200s Alley',
-    tag: 'alley'
+    tag: 'Baby'
   },
   {
-    image: '/pexels-irina-iriser-1381679.jpg',
+    image: '/Baby/Baby2.jpg',
     description: 'ƒ/1.8, ISO 200, 1/1000s Nature',
-    tag: 'nature'
+    tag: 'Baby'
   },
   {
-    image: '/pexels-lil-artsy-3166841.jpg',
+    image: '/Baptism/Baptism1.jpg',
     description: 'ƒ/8.0, ISO 400, 1/60s Books',
-    tag: 'books'
+    tag: 'Baptism'
   },
   {
-    image: '/pexels-mariia-ivanova-17725290.jpg',
+    image: '/Baptism/Baptism2.jpg',
     description: 'ƒ/4.5, ISO 200, 1/320s Camera',
-    tag: 'camera'
+    tag: 'Baptism'
   },
   {
-    image: '/pexels-vandana-vankhede-17595150.jpg',
+    image: '/Couple/Couple1.jpg',
     description: 'ƒ/5.6, ISO 320, 1/100s Camera',
-    tag: 'camera'
+    tag: 'Couple'
   },
   {
-    image: '/pexels-irina-iriser-1122626.jpg',
+    image: '/Couple/Couple2.jpg',
     description: 'ƒ/5.6, ISO 320, 1/100s Camera',
-    tag: 'nature'
+    tag: 'Couple'
   },
   {
-    image: '/pexels-ricky-esquivel-1907785.jpg',
+    image: '/Family/Family1.jpg',
     description: 'ƒ/5.6, ISO 320, 1/100s Camera',
-    tag: 'books'
+    tag: 'Family'
   },
   {
-    image: '/pexels-suket-dedhia-570025.jpg',
+    image: '/Family/Family2.jpg',
     description: 'ƒ/5.6, ISO 320, 1/100s Camera',
-    tag: 'alley'
+    tag: 'Family'
+  },
+  {
+    image: '/Mariage/Mariage1.jpg',
+    description: 'ƒ/5.6, ISO 320, 1/100s Camera',
+    tag: 'Mariage'
+  },
+  {
+    image: '/Mariage/Mariage2.jpg',
+    description: 'ƒ/5.6, ISO 320, 1/100s Camera',
+    tag: 'Mariage'
+  },
+  {
+    image: '/Maternity/Maternity1.jpg',
+    description: 'ƒ/5.6, ISO 320, 1/100s Camera',
+    tag: 'Maternity'
+  },
+  {
+    image: '/Maternity/Maternity2.jpg',
+    description: 'ƒ/5.6, ISO 320, 1/100s Camera',
+    tag: 'Maternity'
+  },
+  {
+    image: '/Portrait/Portrait1.jpg',
+    description: 'ƒ/5.6, ISO 320, 1/100s Camera',
+    tag: 'Portrait'
+  },
+  {
+    image: '/Portrait/Portrait2.jpg',
+    description: 'ƒ/5.6, ISO 320, 1/100s Camera',
+    tag: 'Portrait'
   }
 ];
 
@@ -106,9 +136,13 @@ function ImageGallery() {
   return (
       <div className='buttonsFilter' handleSetTag={setTag}>
           <TagButton name="all" handleSetTag={setTag}/>
-          <TagButton name="nature" handleSetTag={setTag}/>
-          <TagButton name="alley" handleSetTag={setTag}/>
-          <TagButton name="camera" handleSetTag={setTag}/>
+          <TagButton name="Baby" handleSetTag={setTag}/>
+          <TagButton name="Baptism" handleSetTag={setTag}/>
+          <TagButton name="Couple" handleSetTag={setTag}/>
+          <TagButton name="Family" handleSetTag={setTag}/>
+          <TagButton name="Mariage" handleSetTag={setTag}/>
+          <TagButton name="Maternity" handleSetTag={setTag}/>
+          <TagButton name="Portrait" handleSetTag={setTag}/>
           <div className='imgContainer'>{filteredImages.map(img => 
             <div>
               <img src={img.image}/> 

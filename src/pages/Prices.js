@@ -9,7 +9,7 @@ function Prices() {
   return (
       <div className='prices'>
           <div className='card'>
-              <img src="/JustMe.jpg" alt="Just Me" />
+              <img src="/Prices/JustMe.jpg" alt="Just Me" />
               <div className='cardText'>
                   <h1>Just Me</h1>
                   <p><strong>130 euros</strong> - Session for one person, outdoors or in the studio</p>
@@ -20,10 +20,10 @@ function Prices() {
                   <h1>For Two</h1>
                   <p><strong>195 euros</strong> - Session for two people, outdoors or in the studio</p>
               </div>
-              <img src="/For2.jpg" alt="For Two" />
+              <img src="/Prices/For2.jpg" alt="For Two" />
           </div>
           <div className='card'>
-              <img src="/Family.jpg" alt="Family" />
+              <img src="/Prices/Family.jpg" alt="Family" />
               <div className='cardText'>
                   <h1>Family</h1>
                   <p><strong>220 euros</strong> - Session for family or friends up to 4 people, outdoors or in the studio</p>
@@ -35,10 +35,10 @@ function Prices() {
                   <h1>Once Upon a Time</h1>
                   <p><strong>160 euros</strong> - Maternity photo (At your home, outdoors, or in the studio)</p>
               </div>
-              <img src="/Maternity.jpg" alt="Once Upon a Time" />
+              <img src="/Prices/Maternity.jpg" alt="Once Upon a Time" />
           </div>
           <div className='card'>
-              <img src="/Baby.jpg" alt="My Baby" />
+              <img src="/Prices/Baby.jpg" alt="My Baby" />
               <div className='cardText'>
                   <h1>My Baby</h1>
                   <p><strong>100 euros</strong> - Child photo up to 3 years old (at home)</p>
@@ -49,7 +49,7 @@ function Prices() {
                   <h1>I Capture the Event</h1>
                   <p>Custom wedding or baptism service - Price on request</p>
               </div>
-              <img src="/event.jpg" alt="I Capture the Event" />
+              <img src="/Prices/event.jpg" alt="I Capture the Event" />
           </div>
       </div>
   );
