@@ -1,0 +1,89 @@
+.contact {
+  display: flex; /* Utilise flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items along the cross axis */
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.contact h1 {
+  color: white; /* Set text color to white */
+  margin-bottom: 50px; /* Add bottom margin for spacing */
+}
+
+.container {
+  display: flex; /* Utilise flexbox for layout */
+  justify-content: space-between; /* Distribute items along the main axis */
+  width: 100%; /* Take up full width */
+}
+
+.left-container {
+  width: 45%; /* Set width to 45% of the parent container */
+  padding-right: 20px; /* Add padding on the right for spacing */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.right-container {
+  width: 45%; /* Set width to 45% of the parent container */
+  height: auto; /* Set height to auto */
+  padding-left: 20px; /* Add padding on the left for spacing */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.right-container textarea {
+  height: 250px; /* Set the height of the textarea */
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+input {
+  background: transparent; /* Remove the background of the input fields */
+  border-radius: 5px; /* Set border radius */
+  border: 2px solid #fff; /* Set border style and color */
+  box-shadow: none; /* Remove box shadow */
+}
+
+textarea {
+  background: transparent; /* Remove the background of the textarea */
+  border-radius: 5px; /* Set border radius */
+  border: 2px solid #fff; /* Set border style and color */
+  box-shadow: none; /* Remove box shadow */
+}
+
+::placeholder {
+  background: transparent; /* Remove placeholder background */
+  color: #fff; /* Set placeholder text color to white */
+}
+
+.input-container {
+  margin-bottom: 18px; /* Add bottom margin for spacing */
+}
+
+label {
+  font-weight: bold; /* Set font weight to bold for labels */
+}
+
+input,
+textarea {
+  width: 100%; /* Take up full width */
+  padding: 16px; /* Add padding inside the input fields */
+  margin-top: 4px; /* Add top margin for spacing */
+}
+
+.button-container {
+  text-align: center; /* Center the button horizontally within the container */
+}
+
+button {
+  padding: 15px 30px; /* Add padding inside the button */
+  text-align: center; /* Center the text inside the button */
+  background-color: #fff; /* Set background color */
+  color: #47555E; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Set border radius */
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+button:hover {
+  background-color: #fff; /* Change background color on hover */
+}

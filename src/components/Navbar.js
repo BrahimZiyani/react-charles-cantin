@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.css';
 
+
+// Define a React functional component named Navbar
+// This component represents a navigation bar with a responsive menu for different links
 function Navbar() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
@@ -28,13 +31,13 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
-                            Contact
+                        <Link to='/prices' className='nav-links' onClick={closeMobileMenu}>
+                            Prices
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
-                            About Me
+                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            Contact
                         </Link>
                     </li>
                 </ul>

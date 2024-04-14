@@ -1,158 +1,170 @@
+/* Styling for the .navbar class */
 .navbar {
-  height: 150px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: relative; /* Modification ici */
-  top: 0;
-  z-index: 999;
+  height: 150px; /* Set the height of the navbar to 150px */
+  width: 100%; /* Set the width of the navbar to 100% */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+  font-size: 1.2rem; /* Set the font size to 1.2rem */
+  position: relative; /* Set the position to relative */
+  top: 0; /* Set the top position to 0 */
+  z-index: 999; /* Set the z-index to 999 */
 }
 
+/* Styling for the .navbar-container class */
 .navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  max-width: 1500px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+  height: 80px; /* Set the height of the navbar container to 80px */
+  max-width: 1500px; /* Set the maximum width of the navbar container to 1500px */
 }
 
+/* Styling for the .navbar-logo class */
 .navbar-logo {
-  color: #fff;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
+  color: #fff; /* Set the text color to white */
+  justify-self: start; /* Justify the content to the start */
+  margin-left: 20px; /* Set the left margin to 20px */
+  cursor: pointer; /* Set the cursor to a pointer */
+  text-decoration: none; /* Remove text decoration */
+  font-size: 2rem; /* Set the font size to 2rem */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align content vertically */
 }
 
+/* Styling for the .fa-typo3 class */
 .fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
+  margin-left: 0.5rem; /* Set the left margin to 0.5rem */
+  font-size: 1.8rem; /* Set the font size to 1.8rem */
 }
 
+/* Styling for the .nav-menu class */
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  list-style: none;
-  text-align: center;
-  width: 60vw;
-  justify-content: end;
+  display: grid; /* Use CSS grid for layout */
+  grid-template-columns: repeat(4, auto); /* Create a grid with 4 columns */
+  grid-gap: 10px; /* Set the gap between grid items to 10px */
+  list-style: none; /* Remove the default list style */
+  text-align: center; /* Center align text */
+  width: 60vw; /* Set the width to 60% of the viewport width */
+  justify-content: end; /* Align content to the end */
 }
 
+/* Styling for the .nav-item class */
 .nav-item {
-  height: 80px;
+  height: 80px; /* Set the height of the nav item to 80px */
 }
 
+/* Styling for the .nav-links class */
 .nav-links {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
+  color: #fff; /* Set the text color to white */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align content vertically */
+  text-decoration: none; /* Remove text decoration */
+  padding: 0.5rem 1rem; /* Set the padding */
+  height: 100%; /* Set the height to 100% */
 }
 
+/* Styling for hover effect on .nav-links */
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+  border-bottom: 4px solid #fff; /* Add a bottom border with white color on hover */
+  transition: all 0.2s ease-out; /* Add a smooth transition effect */
 }
 
+/* Styling for the .fa-bars class */
 .fa-bars {
-  color: #fff;
+  color: #fff; /* Set the text color to white */
 }
 
+/* Styling for the .nav-links-mobile class */
 .nav-links-mobile {
-  display: none;
+  display: none; /* Hide the element by default */
 }
 
+/* Styling for the .menu-icon class */
 .menu-icon {
-  display: none;
+  display: none; /* Hide the element by default */
 }
 
+/* Media query for screens with a maximum width of 960px */
 @media screen and (max-width: 960px) {
   .NavbarItems {
-    position: relative;
+      position: relative; /* Set the position to relative */
   }
 
   .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 150px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
+      display: flex; /* Use flexbox for layout */
+      flex-direction: column; /* Arrange items in a column */
+      width: 100%; /* Set the width to 100% */
+      position: absolute; /* Set the position to absolute */
+      top: 150px; /* Set the top position to 150px */
+      left: -100%; /* Move the menu out of the viewport */
+      opacity: 1; /* Set the initial opacity to 1 */
+      transition: all 0.5s ease; /* Add a transition effect */
   }
 
   .nav-menu.active {
-    padding: 1rem 0rem;
-    background: #242222;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
+      padding: 1rem 0rem; /* Set padding when active */
+      background: #242222; /* Set the background color to #242222 when active */
+      left: 0; /* Move the menu to the left edge */
+      opacity: 1; /* Set the opacity to 1 */
+      transition: all 0.5s ease; /* Add a transition effect */
+      z-index: 1; /* Set the z-index to 1 */
   }
 
   .nav-links {
-    text-align: center;
-    height: 30px;
-    padding: 0;
-    width: 100%;
-    display: table;
+      text-align: center; /* Center align text */
+      height: 30px; /* Set the height to 30px */
+      padding: 0; /* Reset padding */
+      width: 100%; /* Set the width to 100% */
+      display: table; /* Use table layout */
   }
 
   .nav-links:hover {
-    color: white;
-    border-bottom: 1px solid #fff;
-    transition: all 0.2s ease-out;
+      color: white; /* Set the text color to white on hover */
+      border-bottom: 1px solid #fff; /* Add a bottom border with white color on hover */
+      transition: all 0.2s ease-out; /* Add a smooth transition effect */
   }
 
   .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+      position: absolute; /* Set the position to absolute */
+      top: 0; /* Set the top position to 0 */
+      left: 0; /* Set the left position to 0 */
+      transform: translate(25%, 50%); /* Move and transform the logo */
   }
 
   .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
+      display: block; /* Display the menu icon */
+      position: absolute; /* Set the position to absolute */
+      top: 0; /* Set the top position to 0 */
+      right: 0; /* Set the right position to 0 */
+      transform: translate(-100%, 60%); /* Move and transform the menu icon */
+      font-size: 1.8rem; /* Set the font size to 1.8rem */
+      cursor: pointer; /* Set the cursor to a pointer */
   }
 
   .fa-times {
-    color: #fff;
-    font-size: 2rem;
+      color: #fff; /* Set the text color to white */
+      font-size: 2rem; /* Set the font size to 2rem */
   }
 
   .nav-links-mobile {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
+      display: block; /* Display the mobile nav links */
+      text-align: center; /* Center align text */
+      margin: 2rem auto; /* Set the margin */
+      border-radius: 4px; /* Set the border radius */
+      width: 80%; /* Set the width to 80% */
+      text-decoration: none; /* Remove text decoration */
+      font-size: 1.5rem; /* Set the font size to 1.5rem */
+      background-color: transparent; /* Set the background color to transparent */
+      color: #fff; /* Set the text color to white */
+      padding: 14px 20px; /* Set the padding */
+      border: 1px solid #fff; /* Set the border */
+      transition: all 0.3s ease-out; /* Add a transition effect */
   }
 
   .nav-links-mobile:hover {
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
+      background: #fff; /* Set the background color to white on hover */
+      color: #242424; /* Set the text color to dark */
+      transition: 250ms; /* Add a smooth transition effect */
   }
 }
