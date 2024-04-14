@@ -1,9 +1,10 @@
-
-/* Styling for a class named centeredText */
-.centeredText {
+.hero-background {
     background-image: url("/public/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+/* Styling for a class named centeredText */
+.centeredText {
     align-items: center;
     text-align: center;
     color: white;

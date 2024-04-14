@@ -11,6 +11,11 @@
   z-index: 999; /* Set the z-index to 999 */
 }
 
+img{
+  border: #fff solid 1px;
+  border-radius: 5px;
+}
+
 /* Styling for the .navbar-container class */
 .navbar-container {
   display: flex; /* Use flexbox for layout */
@@ -18,18 +23,6 @@
   align-items: center; /* Center align content vertically */
   height: 80px; /* Set the height of the navbar container to 80px */
   max-width: 1500px; /* Set the maximum width of the navbar container to 1500px */
-}
-
-/* Styling for the .navbar-logo class */
-.navbar-logo {
-  color: #fff; /* Set the text color to white */
-  justify-self: start; /* Justify the content to the start */
-  margin-left: 20px; /* Set the left margin to 20px */
-  cursor: pointer; /* Set the cursor to a pointer */
-  text-decoration: none; /* Remove text decoration */
-  font-size: 2rem; /* Set the font size to 2rem */
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center align content vertically */
 }
 
 /* Styling for the .fa-typo3 class */
