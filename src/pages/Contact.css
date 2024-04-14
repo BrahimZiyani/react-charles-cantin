@@ -3,7 +3,8 @@
   flex-direction: column; /* Arrange items in a column */
   align-items: center; /* Center items along the cross axis */
   max-width: 800px; /* Set maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
+  margin: 0 auto; /* Set margin to auto for centering */
+  padding: 0 20px; /* Add padding on the left and right */
 }
 
 .contact h1 {
@@ -14,7 +15,7 @@
 .container {
   display: flex; /* Utilise flexbox for layout */
   justify-content: space-between; /* Distribute items along the main axis */
-  width: 100%; /* Take up full width */
+  width: 50vh; /* Take up full width */
 }
 
 .left-container {
@@ -24,14 +25,14 @@
 }
 
 .right-container {
-  width: 45%; /* Set width to 45% of the parent container */
+  width: 100%;  
   height: auto; /* Set height to auto */
   padding-left: 20px; /* Add padding on the left for spacing */
   box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .right-container textarea {
-  height: 250px; /* Set the height of the textarea */
+  height: 30vh; /* Set the height of the textarea */
   resize: vertical; /* Allow vertical resizing of the textarea */
 }
 
@@ -63,8 +64,7 @@ label {
 }
 
 input,
-textarea {
-  width: 100%; /* Take up full width */
+textarea { /* Take up full width */
   padding: 16px; /* Add padding inside the input fields */
   margin-top: 4px; /* Add top margin for spacing */
 }
@@ -86,4 +86,24 @@ button {
 
 button:hover {
   background-color: #fff; /* Change background color on hover */
+}
+
+@media screen and (max-width: 454px) {
+  .right-container textarea {
+    width: 100px;
+  }
+  
+  input {
+    width: 100px;
+    margin-left: 35px;
+  }
+
+  .container{
+    width: 400px;
+  }
+
+  .right-container{
+    padding-left: 0px;
+    width: 200px;
+  }
 }
