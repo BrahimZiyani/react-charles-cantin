@@ -14,8 +14,9 @@
   align-items: center; /* Align items along the center vertically */
   text-align: center; /* Align text to the center */
   width: 100%; /* Set the width to 100% */
-  background-color: #f9f9f9; /* Set the background color */
+  background-color: #47555E; /* Set the background color */
   border-radius: 10px; /* Apply border radius of 10px */
+  border: #fff solid 1px; /* Set border */
   overflow: hidden; /* Hide overflowing content */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow */
   cursor: pointer; /* Set cursor to pointer */
@@ -36,11 +37,11 @@
 .cardText h1 {
   font-size: 1.2em; /* Set the font size */
   margin-bottom: 10px; /* Add margin at the bottom */
-  color: #333; /* Set text color */
+  color: #fff; /* Set text color */
 }
 
 /* Styling for paragraph inside the card */
 .cardText p {
   font-size: 1em; /* Set the font size */
-  color: #555; /* Set text color */
+  color: #fff; /* Set text color */
 }

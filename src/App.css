@@ -7,6 +7,9 @@
 
 body{
     background-color: #47555E;
+    background-size: cover; /* Set the background size to cover the entire container */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed;
 }
 
 .footer {

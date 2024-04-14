@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Hero.css'
 import Button from './Button';
 
@@ -7,8 +6,10 @@ import Button from './Button';
 // Define a React functional component named Hero
 // This component represents a hero section with a title, subtitle, and buttons for Portfolio and Contact Me
 function Hero() {
+  const backgroundImage = './hero.jpg';
 return (
-<div className="centeredText">
+  <div className="centeredText">
+  
   <h1>Charles Cantin</h1>
   <p>Photographe</p>
   <div className='buttons'>
