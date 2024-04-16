@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import './Hero.css'
 import Button from './Button';
 import { useEffect } from 'react';

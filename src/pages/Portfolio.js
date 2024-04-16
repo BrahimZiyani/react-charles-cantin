@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import {Slider, ImageGallery, CircleArrowDownButton} from '../components/Slider';
 
 function Portfolio() {

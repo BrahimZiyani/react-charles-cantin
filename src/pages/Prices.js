@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-import {Slider, ImageGallery} from '../components/Slider';
 import './Prices.css'
 
 

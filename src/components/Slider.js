@@ -81,8 +81,6 @@ const SliderData = [
 
 // This function creates a Swiper component to display the images from the SliderData array
 function Slider() {
-  const [filter, setFilter] = useState(''); // State to store the selected filter
-
   return (
       <Swiper
         style={{
@@ -145,7 +143,7 @@ function ImageGallery() {
           <TagButton name="Portrait" handleSetTag={setTag}/>
           <div className='imgContainer'>{filteredImages.map(img => 
             <div>
-              <img src={img.image}/> 
+              <img src={img.image} alt=''/> 
             </div>)}</div>
       </div>
   );
